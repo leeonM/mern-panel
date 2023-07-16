@@ -1,0 +1,41 @@
+.settings{
+    display: flex;
+    .settingsContainer{
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        hr{
+            width: 100%;
+            margin-top: 50px;
+            height: 0;
+            border: 0.5px solid rgb(218, 217, 217);
+        }
+        .userDetails{
+            margin: 9px 30px;
+            h3{
+                margin-bottom: 30px;
+                color: #4A55A2;
+                font-weight: 400;
+            }
+            p{
+                line-height: 30px;
+    
+            }
+            
+        }
+        .hrContact{
+            margin: 20px 0;
+            align-self: center;
+            width: 80%;
+            height: 0;
+            border: 0.5px solid rgb(218, 217, 217);
+        }
+        .contact{
+            margin: 0 30px;
+            .contactText{
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+    }
+}

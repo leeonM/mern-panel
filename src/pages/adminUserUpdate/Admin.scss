@@ -1,0 +1,38 @@
+.admin{
+    display: flex;
+    .adminContainer{
+        flex: 4;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h3{
+                margin-bottom: 20px;
+                font-weight: 300;
+            }
+            .add{
+                display: flex;
+                flex-direction: column;
+                label {
+                    margin-bottom: 5px;
+                    font-weight: 300;
+                }
+                input {
+                    height: 30px;
+                    width: 300px;
+                }
+                button {
+                    margin-top: 10px;
+                    border: none;
+                    height: 30px;
+                    color: white;
+                    background-color: #4A55A2;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

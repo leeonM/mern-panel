@@ -1,0 +1,39 @@
+.navbar{
+    height: 70px;
+    border-bottom: 0.5px solid rgb(159, 158, 158);
+    display: flex;
+    color: #4A55A2;
+    .wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        .buttons{
+            display: flex;
+        }
+        .link {
+            color: #4A55A2;
+        }
+        .logoIcon{
+            margin-left: 20px;
+        }
+        .loginBtn,.regBtn{
+            height: 70px;
+            align-items: center;
+            display: flex;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .regBtn{
+            background-color: white;
+            color: #4A55A2;
+            border-left: 0.5px solid rgb(159, 158, 158);
+            padding: 0 30px;
+        }
+        .loginBtn{
+            background-color: #4A55A2;
+            color: white;
+            padding: 0 35px;
+        }
+    }
+}

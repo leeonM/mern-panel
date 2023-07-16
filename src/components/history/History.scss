@@ -1,0 +1,35 @@
+.history{
+    flex: 4;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+   box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+   padding: 15px;
+   .top,.bottom {
+    display: flex;
+    justify-content: space-between;
+   }
+   .bottom{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    .table{
+        .tableCell{
+            font-weight: 600;
+        }
+    }
+    .item{
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-size: 13px;
+        }
+    }
+        .deposit{
+            color: darkgreen;
+        }
+   }
+   hr{
+    margin-top: 10px;
+    height: 0;
+    border: 0.5px solid rgb(218, 217, 217);
+   }
+}

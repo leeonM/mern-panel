@@ -1,0 +1,37 @@
+.widget{
+   display: flex;
+   justify-content: space-between;
+   flex: 1;
+   padding: 10px;
+   -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+   box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+   height: 100px;
+
+   .left, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    .title {
+        font-weight: bold;
+        font-size: 17px;
+        @media (max-width: 700px) {
+            font-size: 15px;
+          }
+    }
+
+    .value {
+        font-size: 28px;
+        font-weight: 600;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 150px;
+        text-align: right;
+        @media (max-width: 700px) {
+            font-size: 18px;
+          }
+    }
+   }
+}

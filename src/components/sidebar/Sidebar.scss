@@ -1,0 +1,84 @@
+.sidebar {
+    flex: 1;
+    border-right: 0.5px solid rgb(218, 217, 217);
+    min-height: 100vh;
+    background-color: white;
+    @media (max-width: 700px) {
+        flex: 2;
+      }
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+            color: #4A55A2;
+            @media (max-width: 900px) {
+                font-size: 15px;
+              }
+        }
+    }
+
+    hr{
+        height: 0;
+        border: 0.5px solid rgb(218, 217, 217);
+
+    }
+
+    .center{
+        text-align: center;
+        @media (max-width: 1200px) {
+            width: 150px;
+          }
+        h2{
+            margin: 10px 0;
+            font-weight: 400;
+            @media (max-width: 900px) {
+                font-size: 17px;
+              }
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+            margin-left: 6px;
+            padding: 3px;
+            cursor: pointer;
+            color: black;
+            &:hover{
+                background-color: #a0a9ee;
+                color: white;
+            }
+
+            .icon{
+                font-size: 17px;
+                @media (max-width: 900px) {
+                    font-size: 15px;
+                  }
+            }
+
+            span{
+                font-size: 17px;
+                font-weight: 500;
+                margin-left: 10px;
+                @media (max-width: 700px) {
+                    font-size: 15px;
+                  }
+            }
+        }
+        .link{
+            color: black;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
