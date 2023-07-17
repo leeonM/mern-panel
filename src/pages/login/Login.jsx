@@ -15,9 +15,9 @@ const Login = () => {
     try {
     const res = await axios.post(process.env.REACT_APP_SERVER_URL+"auth/login",{email, password})
     if (response.status === 400) {
-      alert(response.data)
+      alert(res.response.data)
     } else if (response.status === 404){
-      alert(response.data)
+      alert(res.response.data)
     } else {
     localStorage.setItem("currentUser", JSON.stringify(res.data))
     navigate(`/account/${res.data._id}`)}
