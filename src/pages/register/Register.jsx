@@ -30,7 +30,7 @@ const Register = () => {
     e.preventDefault()
     try {
       if (user.password === user.confirmPassword) {
-       res = await axios.post(process.env.REACT_APP_SERVER_URL+"auth/register", 
+       await axios.post(process.env.REACT_APP_SERVER_URL+"auth/register", 
       {
         ...user,
         email: user.email.toLowerCase(),
@@ -40,8 +40,6 @@ const Register = () => {
       })
       alert('Account created successfully')
       navigate('/login')
-      } else if (res.response.status === 404) {
-        alert(res.response.data)
       } else {
         alert('Password does not match')
       }
