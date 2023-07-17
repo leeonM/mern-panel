@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e)=>{
     e.preventDefault()
     try {
-    const res = await axios.post("http://localhost:8000/api/admin/login",{email, password})
+    const res = await axios.post(process.env.REACT_APP_SERVER_URL+"admin/login",{email, password})
     localStorage.setItem("currentUser", JSON.stringify(res.data))
     navigate(`/admin`)
     } catch (error) {

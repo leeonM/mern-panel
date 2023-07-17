@@ -15,7 +15,7 @@ const Password = () => {
   useEffect(() => {
     const verified = async () =>{
       try {
-        await axios.get(`http://localhost:8000/api/auth/reset-password/${userId}/${token}`)
+        await axios.get(`${process.env.REACT_APP_SERVER_URL}api/auth/reset-password/${userId}/${token}`)
       } catch (error) {
         alert('Session expired')
         navigate('/')
@@ -29,7 +29,7 @@ const Password = () => {
     e.preventDefault()
     try {
       if (password === confirmPassword) {
-      await axios.post(`http://localhost:8000/api/auth/reset-password/${userId}/${token}`, 
+      await axios.post(`${process.env.REACT_APP_SERVER_URL}auth/reset-password/${userId}/${token}`, 
       {password, confirmPassword})
       alert('Password updated')
       navigate('/login')

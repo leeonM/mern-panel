@@ -9,10 +9,6 @@ import { useNavigate } from 'react-router-dom'
 
 const Account = () => {
   const currentUser = JSON.parse(localStorage.getItem("currentUser"))
-  const purchased = [
-    {name: "Renewable 5 year Bond", amount:5000},
-    {name: "UK Gov Fixed Rate 3 year Bond", amount:5000}, 
-  ]
 
   const navigate = useNavigate()
 
@@ -69,7 +65,7 @@ while (date.getDate() < Number(payDate)){
            />
         </div>
         <div className="transactions">
-          <Products user={currentUser} purchased={purchased} />
+          <Products user={currentUser} />
           <History user={currentUser} />
         </div>
       </div>

@@ -30,7 +30,7 @@ const Register = () => {
     e.preventDefault()
     try {
       if (user.password === user.confirmPassword) {
-      await axios.post("http://localhost:8000/api/auth/register", 
+      await axios.post(process.env.REACT_APP_SERVER_URL+"auth/register", 
       {
         ...user,
         email: user.email.toLowerCase(),

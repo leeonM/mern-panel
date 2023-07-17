@@ -36,7 +36,7 @@ const AdminUserUpdate = () => {
       const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-          await axios.put("http://localhost:8000/api/admin/updateUser", {
+          await axios.put(process.env.REACT_APP_SERVER_URL+"admin/updateUser", {
             ...user,
             email: user.email.toLowerCase(),
             fName: user.fName.charAt(0).toUpperCase() + user.fName.slice(1),

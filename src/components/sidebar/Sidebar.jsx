@@ -11,7 +11,7 @@ const Sidebar = ({admin, settingsPage,user,account}) => {
   const navigate = useNavigate()
   const handleLogout = async ()=>{
     try {
-      await axios.post("http://localhost:8000/api/auth/logout")
+      await axios.post(process.env.REACT_APP_SERVER_URL+"auth/logout")
       localStorage.setItem("currentUser", null)
       navigate("/")
     } catch (error) {
