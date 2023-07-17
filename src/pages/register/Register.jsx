@@ -40,6 +40,8 @@ const Register = () => {
       })
       alert('Account created successfully')
       navigate('/login')
+      } else if (response.status === 404) {
+        alert(response.data)
       } else {
         alert('Password does not match')
       }
