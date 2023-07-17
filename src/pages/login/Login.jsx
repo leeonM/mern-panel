@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e)=>{
     e.preventDefault()
     try {
-    await axios.post(process.env.REACT_APP_SERVER_URL+"auth/login",{email, password})
+    const res = await axios.post(process.env.REACT_APP_SERVER_URL+"auth/login",{email, password})
     localStorage.setItem("currentUser", JSON.stringify(res.data))
     navigate(`/account/${res.data._id}`)
     } catch (error) {
